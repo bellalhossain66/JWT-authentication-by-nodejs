@@ -1,0 +1,29 @@
+GET http://localhost:4010/users
+authorization: Bearer yJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiSG9zc2FpbiIsImlhdCI6MTY0OTE5MTI1MiwiZXhwIjoxNjQ5MTkxMjY3fQ.J2rL-MHMEXLTXrLFm6GU1e3swOO6rJ-rXMlEi5qtHi4
+
+###
+
+POST http://localhost:4011/token
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiSG9zc2FpbiIsImlhdCI6MTY0OTE5MTI2N30.7YTNKUs4wtZWJIeSdBhAFiJOdNG7ibx-hLHqjVPQFnk"
+}
+
+###
+
+POST http://localhost:4011/login
+Content-Type: application/json
+
+{
+    "username": "Hossain" 
+}
+
+###
+
+DELETE http://localhost:4011/logout
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiSG9zc2FpbiIsImlhdCI6MTY0OTE5MTI2N30.7YTNKUs4wtZWJIeSdBhAFiJOdNG7ibx-hLHqjVPQFnk"
+}
